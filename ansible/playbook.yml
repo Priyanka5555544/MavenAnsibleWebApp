@@ -1,11 +1,16 @@
+priyanka A S <priya.as1408@gmail.com>
+	
+12:07 PM (0 minutes ago)
+	
+to me
+
 - name: Deploy to Tomcat
   hosts: web
   become: yes
   tasks:
     - name: Copy WAR file to Tomcat
       copy:
-        src: "/var/snap/jenkins/4859/workspace/MavenAnsible-CICD/target/MavenAnsibleWebApp.war
-"
+        src: "/var/snap/jenkins/4859/workspace/MavenAnsible-CICD/target/MavenAnsibleWebApp.war"
         dest: "/opt/tomcat/webapps/MavenAnsibleWebApp.war"
         remote_src: no
 
@@ -13,4 +18,3 @@
       systemd:
         name: tomcat
         state: restarted
-
