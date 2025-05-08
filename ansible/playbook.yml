@@ -1,9 +1,3 @@
-priyanka A S <priya.as1408@gmail.com>
-	
-12:07 PM (0 minutes ago)
-	
-to me
-
 - name: Deploy to Tomcat
   hosts: web
   become: yes
